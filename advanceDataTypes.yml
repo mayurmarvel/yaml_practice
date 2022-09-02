@@ -1,0 +1,74 @@
+student: !!seq
+  - name
+  - roll_no
+  - class
+
+cities: [chennai, coimbatore, mumbai]
+
+#Some of the keys of the keys can be empty 
+#SParse Sequance
+sparse_seq:
+  - hi
+  - hello
+  -
+  - hoi
+
+# nested sequance
+
+nested_seq:
+- 
+ - mango
+ - aple
+-
+ - yes
+ - no
+
+
+#Key : VAlue Pairs called mAps
+#!!map
+name: KKK
+role: {age:21, job: student}
+
+#pairs contains multiple duplicate values
+#!!pairs
+
+pair example: !!pairs #array of hastables
+- job: student
+- job: teacher
+
+pair example2: [job: student, job: teacher]
+
+# !!set will allow only unique values
+
+guys: !!set
+  ? Mayur
+  ? Sarathy
+  ? Bharath
+
+
+#dictionary !!omap
+poeple: !!omap
+  - Mayur: 
+    name: mayur
+    age : 21
+  - Ravi:
+    name: ravi
+    age: 44
+
+
+#reusing some properties - anchor tags
+
+likings: &likes
+  fav fruit : mangos
+  dislikes : grapes
+
+person1: 
+  name: Mayur
+  <<: *likes
+
+person2: 
+  name: Ravi
+  <<: *likes
+  dislikes: berries
+
+

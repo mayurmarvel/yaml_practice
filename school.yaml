@@ -1,0 +1,7 @@
+---
+School:
+- name: YBN
+  principal: Someone
+  Students:
+  - rollno: 12
+    name: Mayur

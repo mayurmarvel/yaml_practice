@@ -1,0 +1,50 @@
+#String Variables
+myself: Mayur
+name: "Mayur"
+firstName: 'Mayur'
+
+#PreserveStringIndentation
+
+bio:|
+My name is Mayur.
+I am Learing YAML.
+
+# Write a single line in Multiple Lines
+
+message:>
+This is 
+a Single Line
+but represented in
+Multiple Line
+
+#Numbers
+
+number: 499
+marks: 33.33
+booleanValue: No #n, N, False, FALSE
+#Same for True -> Yes, yes, y , Y 
+
+#Specifying Data Types
+zero: !!int 0
+positiveNumber: !!int 45
+binaryNumber: 0b11001
+octalNum: !!int 06111
+hexa: !!int 0x45
+commaValue: +99_000 #99,000
+exponentNumbers: 6.023E56
+
+#FloatingPoint
+
+mark: !!float 66.66
+infinite: !!float .inf
+not a num: .nan 
+
+#null
+surname: !!null Null # NULL ~
+~: This is a null key
+
+#date
+
+date: !!timestamp 2022-12-15
+India Time: 2022-12-15T02:59:43.10 +5:30
+

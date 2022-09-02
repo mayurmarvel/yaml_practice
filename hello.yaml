@@ -1,0 +1,20 @@
+"apple": "I am a red Fruit"
+1: "This is my roll no"
+---
+#lists
+- apple
+- mango
+- banana
+- Banana #CaseSenSitIve
+--- #Seperate Documents within a YAML FILE
+greet:
+  - hi
+  - hello
+  - welcome
+---
+cities: [chennai, coimbatore, mumbai] #NoIndentation-SingleLine
+---
+#Key Value Pairs
+
+{mango : "Yellow Fruit", origin: "India"}
+... #Representing EOD
